@@ -1,0 +1,107 @@
+body {
+    background: #ffffff url("../images/achtergrond-ion.jpg") no-repeat left top;
+}
+h1, h2, h3, h4, h5 { color: #8DC63F; }
+
+h1 {background: url("../images/leaf28.png") no-repeat left center; padding-left: 55px;}
+p { color: #7f3f98; }
+
+h2 a { background: url("../images/leaf28.png") no-repeat left center; padding-left: 55px; color: #8DC63F; }
+h3 a {  color: #8DC63F; }
+h2 a:hover, h3 a:hover { color: #8DC63F; }
+.container, #header, #navigatie { background: #ffffff; }
+
+.container-content {
+    padding: 20px 15px;
+    background: #ffffff;
+}
+.slogan { padding: 10px 20px 0 0; text-align: right; color: #ffffff; font-size: 18px; }
+
+#header {}
+
+#header_top {
+    height:50px;
+    background: #8DC63F;
+}
+
+#header_logo {
+    padding: 20px 0 30px 0;
+    background: #F2EBF5;
+    height: 300px;
+}
+
+#logo { padding: 0 0 0 30px; }
+
+.container-fluid { background: #7f3f98; clear: both; }
+
+.navbar-default .navbar-nav > li > a {
+    color: #8DC63F;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+
+
+#top_region h2 { font-size: 22px; }
+
+#content-right { padding-right: 20px; }
+
+
+#content-top-1, #content-top-2, #content-top-3, #content-bottom-1, #content-bottom-2, #content-bottom-3 {
+    margin: 20px 0;
+    min-height: 100px;
+}
+
+#content-bottom-wrap { margin: 20px 0; }
+
+footer {}
+
+.footer_content { padding: 10px; background: #7f3f98; color: #ffffff; margin: 10px 0; }
+
+
+/*
+*Opmaak core activiteiten
+*/
+
+.core_activities img, .core_activities_node img { display: block; max-width: 100%; height: auto; }
+
+.core_activities_node img { float: left; padding-right: 10px; }
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    #sidebar-first .img-responsive {
+        max-width: 50%;
+        height: auto;
+    }
+    #header_logo { height: 285px; }
+    #slider { display: none; }
+}
+@media (max-width: 768px) {
+    h1 { background: transparent; padding-left: 0px; font-size: 19px; }
+    .slogan { padding: 10px 20px 0 0; font-size: 12px; }
+    #header_top { height:35px; }
+    #header_logo { height: 300px; }
+
+    #slider { display: none; }
+    #sidebar-first .img-responsive { max-width: 45%; height: auto; }
+
+}
+
+@media (max-width: 321px) {
+    #header_logo { height: 220px; }
+    #header_logo .img-responsive { max-width: 70%; }
+}
+
+@media (max-width: 376px) {
+    #header_logo { height: 220px; }
+    #header_logo .img-responsive { max-width: 75%; }
+}
