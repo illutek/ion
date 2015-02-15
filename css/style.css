@@ -1,107 +1,484 @@
 body {
     background: #ffffff url("../images/achtergrond-ion.jpg") no-repeat left top;
 }
-h1, h2, h3, h4, h5 { color: #8DC63F; }
 
-h1 {background: url("../images/leaf28.png") no-repeat left center; padding-left: 55px;}
-p { color: #7f3f98; }
+h1, h2, h3, h4, h5 {
+    color: #8DC63F;
+}
 
-h2 a { background: url("../images/leaf28.png") no-repeat left center; padding-left: 55px; color: #8DC63F; }
-h3 a {  color: #8DC63F; }
-h2 a:hover, h3 a:hover { color: #8DC63F; }
-.container, #header, #navigatie { background: #ffffff; }
+h1 {
+    background: url("../images/leaf28.png") no-repeat left center;
+    padding-left: 55px;
+}
+
+p, label {
+    color: #7f3f98;
+}
+
+a, a:hover {
+    color: #8DC63F;
+}
+
+a:hover {
+}
+
+h2 a {
+    background: url("../images/leaf28.png") no-repeat left center;
+    padding-left: 55px;
+    color: #8DC63F;
+}
+
+h3 a {
+    color: #8DC63F;
+}
+
+h2 a:hover, h3 a:hover {
+    color: #8DC63F;
+}
+
+#navigatie {
+}
 
 .container-content {
     padding: 20px 15px;
     background: #ffffff;
 }
-.slogan { padding: 10px 20px 0 0; text-align: right; color: #ffffff; font-size: 18px; }
 
-#header {}
+.slogan {
+    padding: 10px 20px 0 0;
+    text-align: right;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+#header {
+}
 
 #header_top {
-    height:50px;
+    height: 50px;
     background: #8DC63F;
 }
 
 #header_logo {
-    padding: 20px 0 30px 0;
+    padding: 20px 0 0 0;
     background: #F2EBF5;
     height: 300px;
 }
 
-#logo { padding: 0 0 0 30px; }
+#slider {
+    padding: 20px 0 0 0;
+}
 
-.container-fluid { background: #7f3f98; clear: both; }
+#slider img {
+    max-width: 100%;
+    height: auto;
+}
+
+#logo {
+    padding: 0 0 0 30px;
+}
+
+.container-fluid {
+    background: #7f3f98;
+}
 
 .navbar-default .navbar-nav > li > a {
     color: #8DC63F;
 }
+
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
     color: #ffffff;
     background-color: transparent;
 }
 
+#content_all {
+}
 
+#sidebar-first {
+}
 
-#top_region h2 { font-size: 22px; }
+#top_region h2 {
+    font-size: 22px;
+}
 
-#content-right { padding-right: 20px; }
+#content-right {
+    padding-right: 20px;
+}
 
+#content-right img {
+    display: block;
+    max-width: 100%;
+    float: left;
+    margin: 0 20px 1px 0;
+}
 
 #content-top-1, #content-top-2, #content-top-3, #content-bottom-1, #content-bottom-2, #content-bottom-3 {
     margin: 20px 0;
     min-height: 100px;
 }
 
-#content-bottom-wrap { margin: 20px 0; }
+#content-bottom-wrap {
+    margin: 20px 0;
+}
 
-footer {}
+footer {
+}
 
-.footer_content { padding: 10px; background: #7f3f98; color: #ffffff; margin: 10px 0; }
-
+.footer_content {
+    padding: 10px;
+    background: #7f3f98;
+    color: #ffffff;
+    margin: 10px 0;
+}
 
 /*
-*Opmaak core activiteiten
+*breadcrumb
+*/
+.breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: #f5f5f5;
+    border-radius: 0px;
+}
+
+.breadcrumb a {
+    color: #8DC63F;
+}
+
+.breadcrumb a:hover {
+    text-decoration: none;
+}
+
+/*
+*Opmaak core activiteiten en sub activities
 */
 
-.core_activities img, .core_activities_node img { display: block; max-width: 100%; height: auto; }
+.item-list ul.core-ul {
+    list-style: none;
+    font-size: 0px;
+    margin-left: 2.5%;
+}
 
-.core_activities_node img { float: left; padding-right: 10px; }
+.item-list ul.core-ul li {
+    display: inline-block;
+    padding: 5px;
+    font-size: 16px;
+    font-size: 1rem;
+    vertical-align: top;
+}
 
+.item-list ul.core-ul li img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 20px 40px 0;
+    -webkit-transition: all 0.5s ease; /* Safari and Chrome */
+    -moz-transition: all 0.5s ease; /* Firefox */
+    -ms-transition: all 0.5s ease; /* IE 9 */
+    -o-transition: all 0.5s ease; /* Opera */
+    transition: all 0.5s ease;
+}
+
+.item-list ul.core-ul li img:hover {
+    -webkit-transform: scale(1.05); /* Safari and Chrome */
+    -moz-transform: scale(1.05); /* Firefox */
+    -ms-transform: scale(1.05); /* IE 9 */
+    -o-transform: scale(1.05); /* Opera */
+    transform: scale(1.05);
+}
+
+.item-list ul.core-ul li h3 {
+    font-size: 18px;
+}
+
+.item-list ul.core-ul li h3 a {
+    font-size: 14px;
+}
+
+.item-list ul.core-ul li h3 a:hover {
+    text-decoration: none;
+}
+
+.wrapper_core .title_activities {
+    height: 50px;
+}
+
+/*
+*opmaak producten
+*/
+
+.view-producten table, th, td {
+    border-collapse: collapse;
+    padding: 5px 10px;
+    border: 1px solid black;
+}
+
+#block-views-producten-block .item-list {
+    padding: 20px 0 0 0;
+}
+
+.backto {
+    padding-top: 25px;
+}
+
+/* class for 2 columns */
+.item-list ul.core-ul.columns-2 li {
+    width: 47.5%; /* this value + 2.5 should = 50% */
+}
+
+/* class for 3 columns */
+.item-list ul.core-ul.columns-3 li {
+    width: 30.83%; /* this value + 2.5 should = 33% */
+}
+
+/* class for 4 columns */
+.item-list ul.core-ul.columns-4 li {
+    width: 22.5%; /* this value + 2.5 should = 25% */
+}
+
+@media (max-width: 480px) {
+    .item-list ul.core-ul li h3 a {
+        font-size: 12px;
+    }
+
+    .item-list ul.grid-nav li {
+        display: block;
+        margin: 0 0 5px;
+    }
+
+    .item-list ul.grid-nav li a {
+        display: block;
+    }
+
+    .item-list ul.core-ul {
+        margin-left: 0;
+    }
+
+    .item-list ul.core-ul li {
+        width: 100% !important; /* over-ride all li styles */
+        margin: 0 0 20px;
+    }
+}
+
+/*
+* Wij verdelen
+*/
+
+.wij-verdelen-left,.product_img img,
+.wij-verdelen-right .product_img img {
+    padding-bottom: 20px!important;
+}
+
+.wij-verdelen-right {
+    padding-left: 50px;
+}
+
+.wij-verdelen-video {
+    clear: both;
+}
+
+.verdelen_extra_info h4 {
+    color: #000000;
+}
+
+.view-id-wijverdelen .field-content {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 0 15px 10px 0;
+}
+
+/*
+*Locatie contactformulier
+*/
+
+.content-form label {
+    font-weight: normal;
+    display: block;
+}
+
+.field-name-field-adres-1 {
+}
+
+#edit-submitted-wie-contacteren {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#edit-submitted-wie-contacteren .form-checkbox {
+}
+
+#edit-submitted-wie-contacteren .form-radio {
+    width: 5%;
+    float: left;
+}
+
+.form-radio label.option {
+    padding: 1px 0 20px 0;
+    display: inline-block;
+}
+
+#webform-component-firma-naam {
+    clear: both;
+}
+
+#edit-submitted-aanspreking .form-checkboxes .form-item, .form-radios .form-item {
+    width: 10%;
+    float: left;
+}
+
+#edit-submitted-ik-vraag-een-demo-aan-1 {
+    float: left;
+    margin-right: 10px;
+}
+
+#webform-component-voornaam {
+    clear: both;
+}
+
+.content-form .field-name-field-openingsuren {
+    display: none;
+}
+
+#node-18 .postcode {
+    float: left;
+    margin-right: 10px;
+}
+
+#node-18 .plaats {
+    overflow: hidden;
+}
+
+#node-18 #postcode_plaats {
+    clear: both;
+}
+
+#node-18 #bedrijf {
+    padding: 0 0 10px 0;
+}
+
+#node-18 .description {
+    color: #7f3f98;
+}
+
+/*
+*search button
+*/
+
+#header_top #search-block-form .form-item, .form-actions {
+    color: #000000;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    color: #8DC63F;
+    background-color: #7f3f98;
+    border: none;
+    font-size: 12px;
+    padding: 9px 20px 5px 20px;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+    color: #ffffff;
+}
+
+.search-form input {
+    padding: 4px 5px 4px;
+    border: none;
+}
+
+.search-form #edit-basic {
+    background-color: #8DC63F;
+    padding: 10px;
+}
+
+.search-form #edit-basic input[type="submit"] {
+    padding: 6px 20px 4px 20px;
+}
+
+/*
+*media query's
+*/
 
 @media (min-width: 768px) and (max-width: 991px) {
 
 }
-@media (min-width: 768px) and (max-width: 991px) {
 
 }
 @media (min-width: 768px) and (max-width: 991px) {
-    #sidebar-first .img-responsive {
+    /*#sidebar-first .img-responsive {
         max-width: 50%;
         height: auto;
+    }*/
+    #header_logo {
+        height: 285px;
     }
-    #header_logo { height: 285px; }
-    #slider { display: none; }
-}
-@media (max-width: 768px) {
-    h1 { background: transparent; padding-left: 0px; font-size: 19px; }
-    .slogan { padding: 10px 20px 0 0; font-size: 12px; }
-    #header_top { height:35px; }
-    #header_logo { height: 300px; }
 
-    #slider { display: none; }
-    #sidebar-first .img-responsive { max-width: 45%; height: auto; }
+    #slider {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #slider img {
+        width: 98%;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        background: transparent;
+        padding-left: 0px;
+        font-size: 19px;
+    }
+
+    .slogan {
+        padding: 10px 20px 0 0;
+        font-size: 12px;
+    }
+
+    /*#header_top { height:35px; }
+    #header_logo { height: 300px; }*/
+    #slider {
+        display: none;
+    }
+
+    /*#sidebar-first .img-responsive { max-width: 45%; height: auto; }*/
 
 }
 
 @media (max-width: 321px) {
-    #header_logo { height: 220px; }
-    #header_logo .img-responsive { max-width: 70%; }
+    #header_logo {
+        height: 220px;
+    }
+
+    #header_logo .img-responsive {
+        max-width: 200%;
+    }
+
+    #block-system-main img {
+        float: none;
+        margin: 0 0 5px 0;
+    }
 }
 
 @media (max-width: 376px) {
-    #header_logo { height: 220px; }
-    #header_logo .img-responsive { max-width: 75%; }
+    #header_logo {
+        height: 220px;
+    }
+
+    #header_logo .img-responsive {
+        max-width: 200%;
+    }
+
+    #block-system-main img {
+        float: none;
+        margin: 0 0 5px 0;
+    }
 }
