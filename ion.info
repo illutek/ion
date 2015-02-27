@@ -16,6 +16,7 @@ regions[slider] = Slider
 regions[menu] = menu
 regions[sidebar-first] = Zijbalk
 regions[wide-top] = Wide top
+regions[wide-bottom] = Wide bottom
 regions[content-top-1] = Top 1
 regions[content-top-2] = Top 2
 regions[content-top-3] = Top 3

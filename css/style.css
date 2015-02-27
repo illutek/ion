@@ -109,9 +109,45 @@ h2 a:hover, h3 a:hover {
 #content-right img {
     display: block;
     max-width: 100%;
+    /*height: auto!important;*/
     float: left;
-    margin: 0 20px 1px 0;
+    margin: 0 20px 10px 0;
 }
+
+#content-right .verdelen_extra_info img,
+.node-down-sub .field-name-field-bijlage .field-item img {
+    margin: 0!important;
+}
+
+#content-right .verdelen_extra_info .field-item,
+.node-down-sub .field-name-field-bijlage .field-item,
+.node-sub-activities .field-name-field-bijlage .field-label {
+    padding-bottom: 10px;
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+#block-views-onder-sub-block {
+    margin-top: 25px;
+}
+
+#block-views-onder-sub-block .opsomming-downsub a {
+    text-decoration: none;
+    padding: 10px;
+    border: solid 1px #8DC63F;
+}
+
+#block-views-onder-sub-block .opsomming-downsub a:hover {
+    border: solid 1px #7f3f98;
+}
+
+#block-views-onder-sub-block .opsomming-downsub {
+    float: left;
+    margin-right: 10px;
+}
+
+
 
 #content-top-1, #content-top-2, #content-top-3, #content-bottom-1, #content-bottom-2, #content-bottom-3 {
     margin: 20px 0;
@@ -135,24 +171,25 @@ footer {
 /*
 *breadcrumb
 */
-.breadcrumb {
+.backto, .breadcrumb {
     padding: 8px 15px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     list-style: none;
     background-color: #f5f5f5;
     border-radius: 0px;
 }
 
-.breadcrumb a {
+.backto a,.breadcrumb a {
     color: #8DC63F;
 }
 
-.breadcrumb a:hover {
+.backto a:hover, .breadcrumb a:hover {
     text-decoration: none;
 }
 
 /*
-*Opmaak core activiteiten en sub activities
+*Opmaak core activiteiten
 */
 
 .item-list ul.core-ul {
@@ -205,6 +242,14 @@ footer {
 }
 
 /*
+*sub activities
+*/
+
+.bijlage {
+    margin: 0 0 10px 0;
+}
+
+/*
 *opmaak producten
 */
 
@@ -216,10 +261,6 @@ footer {
 
 #block-views-producten-block .item-list {
     padding: 20px 0 0 0;
-}
-
-.backto {
-    padding-top: 25px;
 }
 
 /* class for 2 columns */
@@ -265,9 +306,9 @@ footer {
 * Wij verdelen
 */
 
-.wij-verdelen-left,.product_img img,
+.wij-verdelen-left, .product_img img,
 .wij-verdelen-right .product_img img {
-    padding-bottom: 20px!important;
+    padding-bottom: 20px !important;
 }
 
 .wij-verdelen-right {
@@ -406,79 +447,40 @@ input[type="button"]:hover {
 *media query's
 */
 
-@media (min-width: 768px) and (max-width: 991px) {
-
-}
-
-}
-@media (min-width: 768px) and (max-width: 991px) {
-    /*#sidebar-first .img-responsive {
-        max-width: 50%;
-        height: auto;
-    }*/
-    #header_logo {
-        height: 285px;
-    }
-
-    #slider {
-        display: none;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    #slider img {
+@media only screen and (max-width: 1024px) {
+    /* css code voor tablets in landscape mode */
+    #header_logo #slider img {
         width: 98%;
     }
 }
 
-@media (max-width: 768px) {
-    h1 {
-        background: transparent;
-        padding-left: 0px;
-        font-size: 19px;
-    }
-
-    .slogan {
-        padding: 10px 20px 0 0;
-        font-size: 12px;
-    }
-
-    /*#header_top { height:35px; }
-    #header_logo { height: 300px; }*/
-    #slider {
+@media only screen and (max-width: 960px) {
+    /* css code voor tablets in portrait mode */
+    #header_logo #slider {
         display: none;
     }
-
-    /*#sidebar-first .img-responsive { max-width: 45%; height: auto; }*/
-
 }
 
-@media (max-width: 321px) {
+@media only screen and (max-width: 767px) {
+    /* css code voor smartphones in landscape mode */
     #header_logo {
-        height: 220px;
+        height: 230px;
     }
 
-    #header_logo .img-responsive {
-        max-width: 200%;
+    #header_logo #logo img {
+        width: 220px;
     }
 
-    #block-system-main img {
-        float: none;
-        margin: 0 0 5px 0;
+    h1 {
+        font-size: 20px;
+        background-image: none;
+        padding-left: 0;
     }
 }
 
-@media (max-width: 376px) {
-    #header_logo {
-        height: 220px;
-    }
-
-    #header_logo .img-responsive {
-        max-width: 200%;
-    }
-
-    #block-system-main img {
-        float: none;
-        margin: 0 0 5px 0;
+@media only screen and (max-width: 479px) {
+    /* css code voor smartphones in portrait mode */
+    #header_logo #logo {
+        padding: 0 0 0 15px;
     }
 }

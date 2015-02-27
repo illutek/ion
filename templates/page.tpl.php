@@ -13,7 +13,7 @@
                     <?php if ($logo): ?>
                         <div id="logo" class="col-xs-4 col-md-4">
                             <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-                                <img class="img-responsive" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+                                <img class="" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
                             </a>
                         </div>
                     <?php endif; ?>
@@ -61,7 +61,13 @@
                 <?php } else { ?>
                 <div id="content-right" class="col-md-12">
                     <?php } ?>
-                    <?php print $breadcrumb; ?>
+                <!-- terug link niet op de home pagina -->
+                    <?php if(!drupal_is_front_page()) : ?>
+                        <div class="backto">
+                            <a href="javascript:javascript:history.go(-1)">Terug</a>
+                        </div>
+                    <?php endif; ?>
+                    <?php // print $breadcrumb; ?>
                     <a id="main-content"></a>
                     <?php if ($tabs): ?>
                     <div id="tabs-wrapper" class="clearfix"><?php endif; ?>
@@ -85,9 +91,14 @@
                     <?php print render($page['content']); ?>
 
 
-                    <div id="wide-top" class="col-md-12">
+                    <div id="wide-top" class="col-md-12 clearfix">
                         <?php print render($page['wide-top']); ?>
                     </div>
+                    <?php if ($page['wide-bottom']): ?>
+                        <div id="wide-bottom" class="col-md-12 clearfix">
+                            <?php print render($page['wide-bottom']); ?>
+                        </div>
+                    <?php endif; ?>
             </div><!-- end content-right -->
 
 
