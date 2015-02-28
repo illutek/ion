@@ -92,12 +92,6 @@ h2 a:hover, h3 a:hover {
     background-color: transparent;
 }
 
-#content_all {
-}
-
-#sidebar-first {
-}
-
 #top_region h2 {
     font-size: 22px;
 }
@@ -116,7 +110,7 @@ h2 a:hover, h3 a:hover {
 
 #content-right .verdelen_extra_info img,
 .node-down-sub .field-name-field-bijlage .field-item img {
-    margin: 0!important;
+    margin: 0 !important;
 }
 
 #content-right .verdelen_extra_info .field-item,
@@ -144,10 +138,8 @@ h2 a:hover, h3 a:hover {
 
 #block-views-onder-sub-block .opsomming-downsub {
     float: left;
-    margin-right: 10px;
+    margin: 0 10px 25px 0;
 }
-
-
 
 #content-top-1, #content-top-2, #content-top-3, #content-bottom-1, #content-bottom-2, #content-bottom-3 {
     margin: 20px 0;
@@ -180,7 +172,7 @@ footer {
     border-radius: 0px;
 }
 
-.backto a,.breadcrumb a {
+.backto a, .breadcrumb a {
     color: #8DC63F;
 }
 
@@ -278,30 +270,6 @@ footer {
     width: 22.5%; /* this value + 2.5 should = 25% */
 }
 
-@media (max-width: 480px) {
-    .item-list ul.core-ul li h3 a {
-        font-size: 12px;
-    }
-
-    .item-list ul.grid-nav li {
-        display: block;
-        margin: 0 0 5px;
-    }
-
-    .item-list ul.grid-nav li a {
-        display: block;
-    }
-
-    .item-list ul.core-ul {
-        margin-left: 0;
-    }
-
-    .item-list ul.core-ul li {
-        width: 100% !important; /* over-ride all li styles */
-        margin: 0 0 20px;
-    }
-}
-
 /*
 * Wij verdelen
 */
@@ -328,6 +296,10 @@ footer {
     height: 200px;
     float: left;
     margin: 0 15px 10px 0;
+}
+
+#views_slideshow_cycle_main_wijverdelen-block .views-slideshow-cycle-main-frame-row {
+    height: 750px !important;
 }
 
 /*
@@ -364,7 +336,8 @@ footer {
     clear: both;
 }
 
-#edit-submitted-aanspreking .form-checkboxes .form-item, .form-radios .form-item {
+#edit-submitted-aanspreking .form-checkboxes .form-item,
+.form-radios .form-item {
     width: 10%;
     float: left;
 }
@@ -459,6 +432,10 @@ input[type="button"]:hover {
     #header_logo #slider {
         display: none;
     }
+
+    #sidebar-first {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -476,11 +453,35 @@ input[type="button"]:hover {
         background-image: none;
         padding-left: 0;
     }
+
+}
+
+@media (max-width: 480px) {
+    .item-list ul.core-ul li h3 a {
+        font-size: 12px;
+    }
+
+    .item-list ul.grid-nav li {
+        display: block;
+        margin: 0 0 5px;
+    }
+
+    .item-list ul.grid-nav li a {
+        display: block;
+    }
+
+    .item-list ul.core-ul {
+        margin-left: 0;
+    }
+
+    .item-list ul.core-ul li {
+        width: 100% !important; /* over-ride all li styles */
+        margin: 0 0 20px;
+    }
 }
 
 @media only screen and (max-width: 479px) {
     /* css code voor smartphones in portrait mode */
     #header_logo #logo {
         padding: 0 0 0 15px;
-    }
-}
+   
