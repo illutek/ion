@@ -9,6 +9,15 @@ h1, h2, h3, h4, h5 {
 h1 {
     background: url("../images/leaf28.png") no-repeat left center;
     padding-left: 55px;
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+.wrapper_core h3 {
+
 }
 
 p, label {
@@ -117,9 +126,9 @@ h2 a:hover, h3 a:hover {
 .node-down-sub .field-name-field-bijlage .field-item,
 .node-sub-activities .field-name-field-bijlage .field-label {
     padding-bottom: 10px;
-    font-size: 18px;
     margin: 10px 0;
-    font-weight: 500;
+    /*font-weight: 500;
+    font-size: 18px;*/
 }
 
 #block-views-onder-sub-block {
@@ -128,8 +137,13 @@ h2 a:hover, h3 a:hover {
 
 #block-views-onder-sub-block .opsomming-downsub a {
     text-decoration: none;
-    padding: 10px;
+    font-weight: bold;
+    padding: 8px;
     border: solid 1px #8DC63F;
+}
+
+.file-icon {
+    padding-right: 10px;
 }
 
 #block-views-onder-sub-block .opsomming-downsub a:hover {
@@ -158,6 +172,7 @@ footer {
     background: #7f3f98;
     color: #ffffff;
     margin: 10px 0;
+    text-align: center;
 }
 
 /*
@@ -222,7 +237,8 @@ footer {
 }
 
 .item-list ul.core-ul li h3 a {
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .item-list ul.core-ul li h3 a:hover {
@@ -257,12 +273,21 @@ footer {
 
 /* class for 2 columns */
 .item-list ul.core-ul.columns-2 li {
-    width: 47.5%; /* this value + 2.5 should = 50% */
+    width: 47.5%; /* this value + 2.5 should = 50%*/
 }
 
 /* class for 3 columns */
-.item-list ul.core-ul.columns-3 li {
+.view-coreactivities .item-list ul.core-ul.columns-3 li,
+.view-subactiviteit .item-list ul.core-ul.columns-3 li {
     width: 30.83%; /* this value + 2.5 should = 33% */
+}
+
+/*#block-views-coreactivities-block-1 .item-list ul.core-ul.columns-3 li {
+    width: 100%;
+}*/
+
+#block-views-coreactivities-block-1 .views-field-title {
+    padding: 10px 0;
 }
 
 /* class for 4 columns */
@@ -311,15 +336,29 @@ footer {
     display: block;
 }
 
+input, textarea {
+    padding: 5px;
+    border: solid 1px #7f3f98;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    -moz-appearance: none;
+    border: 1px solid #7f3f98;
+    height: 20px;
+    margin: -2px 10px 0 0;
+    width: 20px;
+}
+
+.form-item {
+    margin-bottom: 20px;
+}
+
 .field-name-field-adres-1 {
 }
 
 #edit-submitted-wie-contacteren {
     width: 100%;
     margin-bottom: 25px;
-}
-
-#edit-submitted-wie-contacteren .form-checkbox {
 }
 
 #edit-submitted-wie-contacteren .form-radio {
@@ -336,7 +375,7 @@ footer {
     clear: both;
 }
 
-#edit-submitted-aanspreking .form-checkboxes .form-item,
+#webform-component-aanspreking .form-checkboxes .form-item,
 .form-radios .form-item {
     width: 10%;
     float: left;
@@ -374,6 +413,21 @@ footer {
 
 #node-18 .description {
     color: #7f3f98;
+}
+
+/*offerte formulier*/
+
+.vloer_keuze {
+    padding-bottom: 25px;
+}
+
+.vloer_keuze .form-type-checkbox {
+    width: 160px;
+    float: left;
+}
+
+#webform-component-persoonlijke-gegevens label {
+    width: 100px;
 }
 
 /*
@@ -425,6 +479,11 @@ input[type="button"]:hover {
     #header_logo #slider img {
         width: 98%;
     }
+
+    .vloer_keuze .form-type-checkbox {
+        float: none;
+        width: 25%;
+    }
 }
 
 @media only screen and (max-width: 960px) {
@@ -436,52 +495,52 @@ input[type="button"]:hover {
     #sidebar-first {
         display: none;
     }
-}
 
-@media only screen and (max-width: 767px) {
-    /* css code voor smartphones in landscape mode */
-    #header_logo {
-        height: 230px;
+    @media only screen and (max-width: 767px) {
+        /* css code voor smartphones in landscape mode */
+        #header_logo {
+            height: 230px;
+        }
+
+        #header_logo #logo img {
+            width: 220px;
+        }
+
+        h1 {
+            font-size: 20px;
+            background-image: none;
+            padding-left: 0;
+        }
+
     }
 
-    #header_logo #logo img {
-        width: 220px;
+    @media (max-width: 480px) {
+        .item-list ul.core-ul li h3 a {
+            font-size: 12px;
+        }
+
+        .item-list ul.grid-nav li {
+            display: block;
+            margin: 0 0 5px;
+        }
+
+        .item-list ul.grid-nav li a {
+            display: block;
+        }
+
+        .item-list ul.core-ul {
+            margin-left: 0;
+        }
+
+        .item-list ul.core-ul li {
+            width: 100% !important; /* over-ride all li styles */
+            margin: 0 0 20px;
+        }
     }
 
-    h1 {
-        font-size: 20px;
-        background-image: none;
-        padding-left: 0;
+    @media only screen and (max-width: 479px) {
+        /* css code voor smartphones in portrait mode */
+        #header_logo #logo {
+            padding: 0 0 0 15px;
+        }
     }
-
-}
-
-@media (max-width: 480px) {
-    .item-list ul.core-ul li h3 a {
-        font-size: 12px;
-    }
-
-    .item-list ul.grid-nav li {
-        display: block;
-        margin: 0 0 5px;
-    }
-
-    .item-list ul.grid-nav li a {
-        display: block;
-    }
-
-    .item-list ul.core-ul {
-        margin-left: 0;
-    }
-
-    .item-list ul.core-ul li {
-        width: 100% !important; /* over-ride all li styles */
-        margin: 0 0 20px;
-    }
-}
-
-@media only screen and (max-width: 479px) {
-    /* css code voor smartphones in portrait mode */
-    #header_logo #logo {
-        padding: 0 0 0 15px;
-   

@@ -150,7 +150,11 @@
                     <div class="footer_content">
                         <?php print render($page['footer_content']); ?>
                     </div>
+                    <a href="<?php print base_path() ?>wij-maken-op-deze-website-gebruik-van-cookies">
+                        Gebruik van cookies
+                    </a>
                 </footer>
+
             </div>
 </div><!-- /.container -->
 
