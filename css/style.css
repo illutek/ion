@@ -45,9 +45,6 @@ h2 a:hover, h3 a:hover {
     color: #8DC63F;
 }
 
-#navigatie {
-}
-
 .container-content {
     padding: 20px 15px;
     background: #ffffff;
@@ -58,9 +55,6 @@ h2 a:hover, h3 a:hover {
     text-align: right;
     color: #ffffff;
     font-size: 18px;
-}
-
-#header {
 }
 
 #header_top {
@@ -114,7 +108,7 @@ h2 a:hover, h3 a:hover {
     max-width: 100%;
     /*height: auto!important;*/
     float: left;
-    margin: 0 20px 10px 0;
+    margin: 0 10px 10px 0;
 }
 
 #content-right .verdelen_extra_info img,
@@ -123,7 +117,7 @@ h2 a:hover, h3 a:hover {
 }
 
 #content-right .verdelen_extra_info .field-item,
-.node-down-sub .field-name-field-bijlage .field-item,
+.node-down-sub .field-name-field-bijlage .field-item,wij-verdelen-right
 .node-sub-activities .field-name-field-bijlage .field-label {
     padding-bottom: 10px;
     margin: 10px 0;
@@ -301,11 +295,11 @@ footer {
 
 .wij-verdelen-left, .product_img img,
 .wij-verdelen-right .product_img img {
-    padding-bottom: 20px !important;
+    padding-bottom: 15px !important;
 }
 
 .wij-verdelen-right {
-    padding-left: 50px;
+    padding-left: 15px;
 }
 
 .wij-verdelen-video {
@@ -470,6 +464,44 @@ input[type="button"]:hover {
     padding: 6px 20px 4px 20px;
 }
 
+/* opmaak nice menu*/
+
+#block-nice-menus-1 ul.nice-menu a {
+    padding: 0.3em 5px;
+}
+
+#block-nice-menus-1 ul.nice-menu a {
+    color: #8DC63F;
+    display: block;
+    background: transparent;
+    padding: 10px 10px;
+}
+
+#block-nice-menus-1 ul.nice-menu li a:hover {
+    color: #7f3f98;
+    background: #f5f5f5;
+    text-decoration: none;
+}
+
+
+#block-nice-menus-1  ul.nice-menu,
+#block-nice-menus-1 ul.nice-menu ul,
+#block-nice-menus-1 ul.nice-menu li {
+    border: 0;
+    background: none;
+   
+}
+
+
+#block-nice-menus-1  ul.nice-menu-right li.menuparent,
+ul.nice-menu-right li li.menuparent {
+    background: url('arrow-right.png') right center no-repeat;
+}
+
+#block-nice-menus-1 li.menuparent li, li.menuparent ul {
+    background: #f5f5f5;
+}
+
 /*
 *media query's
 */
@@ -480,9 +512,11 @@ input[type="button"]:hover {
         width: 98%;
     }
 
-    .vloer_keuze .form-type-checkbox {
+    .vloer_keuze .form-type-checkbox,
+    .reiniging-renovatie .form-type-checkbox {
         float: none;
         width: 25%;
+        padding-bottom: 10px;
     }
 }
 
@@ -536,11 +570,22 @@ input[type="button"]:hover {
             width: 100% !important; /* over-ride all li styles */
             margin: 0 0 20px;
         }
-    }
 
-    @media only screen and (max-width: 479px) {
-        /* css code voor smartphones in portrait mode */
-        #header_logo #logo {
-            padding: 0 0 0 15px;
+        .vloer_keuze .form-type-checkbox,
+        .reiniging-renovatie .form-type-checkbox {
+            width: 70%;
+        }
+
+        .straat, .plaats, .email {
+            width: 100%;
         }
     }
+
+}
+
+@media only screen and (max-width: 479px) {
+    /* css code voor smartphones in portrait mode */
+    #header_logo #logo {
+        padding: 0 0 0 15px;
+    }
+}
