@@ -8,9 +8,15 @@
                         </h3>
                     <?php endif; ?>
                     <?php print render($title_suffix); ?>
-                    <a href="<?php print $node_url; ?>"><?php print render($content['field_image']); ?></a>
                 </div><!-- end title_activities -->
             </div>
+            <div class="">
+                <a href="<?php print $node_url; ?>">
+                    <?php print render($content['field_image']); ?>
+                </a>
+            </div>
+
+
 
 <?php else: ?><!-- de volledige node -->
     <div class="core_activities_node">

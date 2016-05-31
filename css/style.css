@@ -95,6 +95,41 @@ h2 a:hover, h3 a:hover {
     background-color: transparent;
 }
 
+/*
+* actions region
+================================================*/
+
+.actions {
+    border: solid 1px #7f3f98;
+    padding: 15px;
+}
+.actions .action-img {
+    float: left;
+    margin: 0 10px 0;
+}
+.actions .actions-text {
+    padding: 0;
+}
+
+.actions .actions-text h1 {
+    display: inline-block;
+}
+
+.actions-text h3 {
+    color: #7f3f98;
+}
+
+/* om de titel langs de content te plaatsen
+in de teaser display op de frontpage*/
+
+h2.title_float {
+    float: left;
+    margin-right: 25px;
+    display: inline-block;
+    margin: 0 25px 0;
+}
+
+
 #top_region h2 {
     font-size: 22px;
 }
@@ -111,15 +146,19 @@ h2 a:hover, h3 a:hover {
     margin: 0 10px 10px 0;
 }
 
+#content-right img.file-icon {
+    margin: 0;
+}
+
 #content-right .verdelen_extra_info img,
 .node-down-sub .field-name-field-bijlage .field-item img {
     margin: 0 !important;
 }
 
 #content-right .verdelen_extra_info .field-item,
-.node-down-sub .field-name-field-bijlage .field-item,wij-verdelen-right
-.node-sub-activities .field-name-field-bijlage .field-label {
-    padding-bottom: 10px;
+.node-down-sub .field-name-field-bijlage .field-item,
+.node-sub-activities .field-name-field-bijlage .field-item {
+    padding-bottom: 0;
     margin: 10px 0;
     /*font-weight: 500;
     font-size: 18px;*/
@@ -245,7 +284,7 @@ footer {
 
 /*
 *sub activities
-*/
+=======================================*/
 
 .bijlage {
     margin: 0 0 10px 0;
@@ -253,7 +292,7 @@ footer {
 
 /*
 *opmaak producten
-*/
+==========================================*/
 
 .view-producten table, th, td {
     border-collapse: collapse;
@@ -291,7 +330,7 @@ footer {
 
 /*
 * Wij verdelen
-*/
+====================================================*/
 
 .wij-verdelen-left, .product_img img,
 .wij-verdelen-right .product_img img {
@@ -323,7 +362,7 @@ footer {
 
 /*
 *Locatie contactformulier
-*/
+================================================*/
 
 .content-form label {
     font-weight: normal;
@@ -426,7 +465,7 @@ input[type="checkbox"], input[type="radio"] {
 
 /*
 *search button
-*/
+=============================================*/
 
 #header_top #search-block-form .form-item, .form-actions {
     color: #000000;
@@ -464,7 +503,9 @@ input[type="button"]:hover {
     padding: 6px 20px 4px 20px;
 }
 
-/* opmaak nice menu*/
+/*
+* opmaak nice menu
+============================================================*/
 
 #block-nice-menus-1 ul.nice-menu a {
     padding: 0.3em 5px;
@@ -483,19 +524,17 @@ input[type="button"]:hover {
     text-decoration: none;
 }
 
-
-#block-nice-menus-1  ul.nice-menu,
+#block-nice-menus-1 ul.nice-menu,
 #block-nice-menus-1 ul.nice-menu ul,
 #block-nice-menus-1 ul.nice-menu li {
     border: 0;
     background: none;
-   
+
 }
 
-
-#block-nice-menus-1  ul.nice-menu-right li.menuparent,
+#block-nice-menus-1 ul.nice-menu-right li.menuparent,
 ul.nice-menu-right li li.menuparent {
-    background: url('arrow-right.png') right center no-repeat;
+    /*background: url('arrow-right.png') right center no-repeat;*/
 }
 
 #block-nice-menus-1 li.menuparent li, li.menuparent ul {
@@ -503,8 +542,8 @@ ul.nice-menu-right li li.menuparent {
 }
 
 /*
-*media query's
-*/
+* media query's
+====================================================*/
 
 @media only screen and (max-width: 1024px) {
     /* css code voor tablets in landscape mode */
@@ -569,6 +608,11 @@ ul.nice-menu-right li li.menuparent {
         .item-list ul.core-ul li {
             width: 100% !important; /* over-ride all li styles */
             margin: 0 0 20px;
+        }
+
+        #content-right img {
+            float: none;
+            margin: 0;
         }
 
         .vloer_keuze .form-type-checkbox,
